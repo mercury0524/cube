@@ -1,5 +1,4 @@
 #include "Cube.h"
-#include <iostream>
 
 
 Cube::Cube()
@@ -10,7 +9,11 @@ Cube::Cube()
 		faces[i] = new Face((color)i,(face_name)i);
 	}
 }
-
+void Cube::print() {
+	for (int i = 0; i < 6; i++) {
+		faces[i]->print();
+	}
+}
 
 Cube::~Cube()
 {

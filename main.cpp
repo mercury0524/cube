@@ -6,5 +6,6 @@ using namespace std;
 
 int main(void) {
 	Cube cube;
+	cube.print();
 	return 0;
 }
