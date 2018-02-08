@@ -2,13 +2,14 @@
 
 
 //Face::Face() {}
-Face::Face(int color)
+Face::Face(color color_, face_name name_)
 {
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
-			face[i][j] = color;
+			grid[i][j] = color_;
 		}
 	}
+	name = name_;
 	
 }
 

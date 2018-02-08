@@ -4,9 +4,10 @@ class Face
 {
 public:
 	//Face();
-	Face(int color);
+	Face(color color_, face_name name_);
 	~Face();
 private:
-	int face[3][3]; //3x3 array define 3 faces
+	color grid[3][3]; //3x3 array define 3 faces
+	face_name name;
 };
 
